@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\ACCTNG.vbproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\App.config" />
+  <event action="Analyze" type="Success" name="frmAA.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmAA.resx" />
+  <event action="Analyze" type="Success" name="frmBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmBudget.resx" />
+  <event action="Analyze" type="Success" name="frmCPO.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmCPO.resx" />
+  <event action="Analyze" type="Success" name="frmFPO.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmFPO.resx" />
+  <event action="Analyze" type="Success" name="frmInvestment.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmInvestment.resx" />
+  <event action="Analyze" type="Success" name="frmMultiOrder.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmMultiOrder.resx" />
+  <event action="Analyze" type="Success" name="frmOrder.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmOrder.resx" />
+  <event action="Analyze" type="Success" name="frmPOChange.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmPOChange.resx" />
+  <event action="Analyze" type="Success" name="frmRemBudLessPR.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmRemBudLessPR.resx" />
+  <event action="Analyze" type="Success" name="frmServer.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmServer.resx" />
+  <event action="Analyze" type="Success" name="frmViewPO.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BAP Module\frmViewPO.resx" />
+  <event action="Analyze" type="Success" name="frmBudgetCreation.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BCS Module\frmBudgetCreation.resx" />
+  <event action="Analyze" type="Success" name="frmConversionBC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BCS Module\frmConversionBC.resx" />
+  <event action="Analyze" type="Success" name="frmFinalBudgetCreated.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BCS Module\frmFinalBudgetCreated.resx" />
+  <event action="Analyze" type="Success" name="frmMatrixExpense.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BCS Module\frmMatrixExpense.resx" />
+  <event action="Analyze" type="Success" name="frmMatrixExpenseTrans.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BCS Module\frmMatrixExpenseTrans.resx" />
+  <event action="Analyze" type="Success" name="frmRateLogsBC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BCS Module\frmRateLogsBC.resx" />
+  <event action="Analyze" type="Success" name="frmUploadBCSBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\BCS Module\frmUploadBCSBudget.resx" />
+  <event action="Analyze" type="Success" name="frmAcctngSync.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmAcctngSync.resx" />
+  <event action="Analyze" type="Success" name="frmAddEtc.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmAddEtc.resx" />
+  <event action="Analyze" type="Success" name="frmBAI.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmBAI.resx" />
+  <event action="Analyze" type="Success" name="frmBOI.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmBOI.resx" />
+  <event action="Analyze" type="Success" name="frmBudgetSetting.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmBudgetSetting.resx" />
+  <event action="Analyze" type="Success" name="frmChangePW.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmChangePW.resx" />
+  <event action="Analyze" type="Success" name="frmConfirmUsers.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmConfirmUsers.resx" />
+  <event action="Analyze" type="Success" name="frmConversion.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmConversion.resx" />
+  <event action="Analyze" type="Success" name="frmDLSAP.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmDLSAP.resx" />
+  <event action="Analyze" type="Success" name="frmHomeNew.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmHomeNew.resx" />
+  <event action="Analyze" type="Success" name="frmLogin.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmLogin.resx" />
+  <event action="Analyze" type="Success" name="frmLongProcess.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmLongProcess.resx" />
+  <event action="Analyze" type="Success" name="frmMain.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmMain.resx" />
+  <event action="Analyze" type="Success" name="frmOrderPicker.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmOrderPicker.resx" />
+  <event action="Analyze" type="Success" name="frmSetDataConn.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmSetDataConn.resx" />
+  <event action="Analyze" type="Success" name="frmsplash.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmsplash.resx" />
+  <event action="Analyze" type="Success" name="frmThemeSelector.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmThemeSelector.resx" />
+  <event action="Analyze" type="Success" name="frmUser.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\frmUser.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="Activity.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\Activity.resx" />
+  <event action="Analyze" type="Success" name="frmAddMBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmAddMBudget.resx" />
+  <event action="Analyze" type="Success" name="frmAddSubBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmAddSubBudget.resx" />
+  <event action="Analyze" type="Success" name="frmBudgetHistory.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmBudgetHistory.resx" />
+  <event action="Analyze" type="Success" name="frmCreatePR.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmCreatePR.resx" />
+  <event action="Analyze" type="Success" name="frmExportSubBud.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmExportSubBud.resx" />
+  <event action="Analyze" type="Success" name="frmImport.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmImport.resx" />
+  <event action="Analyze" type="Success" name="frmImportMasterBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmImportMasterBudget.resx" />
+  <event action="Analyze" type="Success" name="frmInactiveSupp.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmInactiveSupp.resx" />
+  <event action="Analyze" type="Success" name="frmItemCode.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmItemCode.resx" />
+  <event action="Analyze" type="Success" name="frmItemNonRM.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmItemNonRM.resx" />
+  <event action="Analyze" type="Success" name="frmMajorBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmMajorBudget.resx" />
+  <event action="Analyze" type="Success" name="frmMajorBudHistory.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmMajorBudHistory.resx" />
+  <event action="Analyze" type="Success" name="frmModel.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmModel.resx" />
+  <event action="Analyze" type="Success" name="frmPezaInfo.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmPezaInfo.resx" />
+  <event action="Analyze" type="Success" name="frmRate.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmRate.resx" />
+  <event action="Analyze" type="Success" name="frmSupplier.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmSupplier.resx" />
+  <event action="Analyze" type="Success" name="frmUpdatePOI.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmUpdatePOI.resx" />
+  <event action="Analyze" type="Success" name="frmUpdateSubBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmUpdateSubBudget.resx" />
+  <event action="Analyze" type="Success" name="frmUploadSubBud.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmUploadSubBud.resx" />
+  <event action="Analyze" type="Success" name="frmViewPR.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\New BAP\frmViewPR.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\packages.config" />
+  <event action="Analyze" type="Success" name="frmGenReport.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmGenReport.resx" />
+  <event action="Analyze" type="Success" name="frmGenReportBC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmGenReportBC.resx" />
+  <event action="Analyze" type="Success" name="frmGenUpd8dBud.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmGenUpd8dBud.resx" />
+  <event action="Analyze" type="Success" name="frmPleaseWait.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmPleaseWait.resx" />
+  <event action="Analyze" type="Success" name="frmPRReport.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmPRReport.resx" />
+  <event action="Analyze" type="Success" name="frmReport.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmReport.resx" />
+  <event action="Analyze" type="Success" name="frmReportBC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmReportBC.resx" />
+  <event action="Analyze" type="Success" name="frmReportInv.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmReportInv.resx" />
+  <event action="Analyze" type="Success" name="frmReportInvestment.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports Module\frmReportInvestment.resx" />
+  <event action="Analyze" type="Success" name="repAA.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repAA.resx" />
+  <event action="Analyze" type="Success" name="repAAItems.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repAAItems.resx" />
+  <event action="Analyze" type="Success" name="repBud.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repBud.resx" />
+  <event action="Analyze" type="Success" name="repBudgetGrid.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repBudgetGrid.resx" />
+  <event action="Analyze" type="Success" name="repBudUpdated.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repBudUpdated.resx" />
+  <event action="Analyze" type="Success" name="repDept.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repDept.resx" />
+  <event action="Analyze" type="Success" name="repFPO_Summary_Item.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repFPO_Summary_Item.resx" />
+  <event action="Analyze" type="Success" name="repFPO_Summary_List.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repFPO_Summary_List.resx" />
+  <event action="Analyze" type="Success" name="repIR2.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repIR2.resx" />
+  <event action="Analyze" type="Success" name="repMonth.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repMonth.resx" />
+  <event action="Analyze" type="Success" name="repMonthAll.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repMonthAll.resx" />
+  <event action="Analyze" type="Success" name="repOrderItem.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repOrderItem.resx" />
+  <event action="Analyze" type="Success" name="repOrderList.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repOrderList.resx" />
+  <event action="Analyze" type="Success" name="Report1.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\Report1.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repPR_Item.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item_All.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repPR_Item_All.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item_Open.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repPR_Item_Open.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item_Open_All.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repPR_Item_Open_All.resx" />
+  <event action="Analyze" type="Success" name="repPrintPR.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repPrintPR.resx" />
+  <event action="Analyze" type="Success" name="repRWG.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repRWG.resx" />
+  <event action="Analyze" type="Success" name="repRWG_PO.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repRWG_PO.resx" />
+  <event action="Analyze" type="Success" name="repRWG_POClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repRWG_POClass.resx" />
+  <event action="Analyze" type="Success" name="repRWG_POClassByClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repRWG_POClassByClass.resx" />
+  <event action="Analyze" type="Success" name="repRWGC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repRWGC.resx" />
+  <event action="Analyze" type="Success" name="repRWGC_Class.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repRWGC_Class.resx" />
+  <event action="Analyze" type="Success" name="repSOrderList.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repSOrderList.resx" />
+  <event action="Analyze" type="Success" name="repUPO_Summary.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_B_2017\repUPO_Summary.resx" />
+  <event action="Analyze" type="Success" name="repAA.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repAA.resx" />
+  <event action="Analyze" type="Success" name="repAAGrid.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repAAGrid.resx" />
+  <event action="Analyze" type="Success" name="repAAItems.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repAAItems.resx" />
+  <event action="Analyze" type="Success" name="repAAList.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repAAList.resx" />
+  <event action="Analyze" type="Success" name="repBud.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repBud.resx" />
+  <event action="Analyze" type="Success" name="repBudgetGrid.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repBudgetGrid.resx" />
+  <event action="Analyze" type="Success" name="repBudUpdated.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repBudUpdated.resx" />
+  <event action="Analyze" type="Success" name="repDept.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repDept.resx" />
+  <event action="Analyze" type="Success" name="repFPO_Summary_Item.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repFPO_Summary_Item.resx" />
+  <event action="Analyze" type="Success" name="repFPO_Summary_List.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repFPO_Summary_List.resx" />
+  <event action="Analyze" type="Success" name="repIR_Sub.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repIR_Sub.resx" />
+  <event action="Analyze" type="Success" name="repIR2.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repIR2.resx" />
+  <event action="Analyze" type="Success" name="repMonth.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repMonth.resx" />
+  <event action="Analyze" type="Success" name="repMonthAll.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repMonthAll.resx" />
+  <event action="Analyze" type="Success" name="repOrderItem.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repOrderItem.resx" />
+  <event action="Analyze" type="Success" name="repOrderList.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repOrderList.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repPR_Item.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item_All.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repPR_Item_All.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item_Open.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repPR_Item_Open.resx" />
+  <event action="Analyze" type="Success" name="repPR_Item_Open_All.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repPR_Item_Open_All.resx" />
+  <event action="Analyze" type="Success" name="repPrintPR.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repPrintPR.resx" />
+  <event action="Analyze" type="Success" name="repPrintPRNew.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repPrintPRNew.resx" />
+  <event action="Analyze" type="Success" name="repPrintPRNewv2.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repPrintPRNewv2.resx" />
+  <event action="Analyze" type="Success" name="repRWG.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repRWG.resx" />
+  <event action="Analyze" type="Success" name="repRWG_PO.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repRWG_PO.resx" />
+  <event action="Analyze" type="Success" name="repRWG_POClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repRWG_POClass.resx" />
+  <event action="Analyze" type="Success" name="repRWG_POClassByClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repRWG_POClassByClass.resx" />
+  <event action="Analyze" type="Success" name="repRWGC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repRWGC.resx" />
+  <event action="Analyze" type="Success" name="repRWGC_Class.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repRWGC_Class.resx" />
+  <event action="Analyze" type="Success" name="repSOrderList.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repSOrderList.resx" />
+  <event action="Analyze" type="Success" name="repUPO_Summary.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\repUPO_Summary.resx" />
+  <event action="Analyze" type="Success" name="rptDetailedReportInv.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\rptDetailedReportInv.resx" />
+  <event action="Analyze" type="Success" name="rptDetailedReportInvChild.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\rptDetailedReportInvChild.resx" />
+  <event action="Analyze" type="Success" name="RptPerInvNo.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\RptPerInvNo.resx" />
+  <event action="Analyze" type="Success" name="RptPerInvPO.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\RptPerInvPO.resx" />
+  <event action="Analyze" type="Success" name="RptPerInvPODetails.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\RptPerInvPODetails.resx" />
+  <event action="Analyze" type="Success" name="RptPerInvPODetailsC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\RptPerInvPODetailsC.resx" />
+  <event action="Analyze" type="Success" name="rptPRHeader.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\rptPRHeader.resx" />
+  <event action="Analyze" type="Success" name="rptRemBudLessPR.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\rptRemBudLessPR.resx" />
+  <event action="Analyze" type="Success" name="rtpInvestment.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BAP\rtpInvestment.resx" />
+  <event action="Analyze" type="Success" name="repConsolidatedBudget.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repConsolidatedBudget.resx" />
+  <event action="Analyze" type="Success" name="repCreatedMajorBud.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repCreatedMajorBud.resx" />
+  <event action="Analyze" type="Success" name="repFBCombine.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repFBCombine.resx" />
+  <event action="Analyze" type="Success" name="repFBperAmount.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repFBperAmount.resx" />
+  <event action="Analyze" type="Success" name="repFBperAmountperClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repFBperAmountperClass.resx" />
+  <event action="Analyze" type="Success" name="repFBperAmountperPPEClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repFBperAmountperPPEClass.resx" />
+  <event action="Analyze" type="Success" name="repFBperQTY.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repFBperQTY.resx" />
+  <event action="Analyze" type="Success" name="repFBperQTYperClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repFBperQTYperClass.resx" />
+  <event action="Analyze" type="Success" name="repFBperQTYperPPEClass.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repFBperQTYperPPEClass.resx" />
+  <event action="Analyze" type="Success" name="repUserBudCreated.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Reports_BCS\repUserBudCreated.resx" />
+  <event action="Analyze" type="Success" name="frmCancelRFQ.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmCancelRFQ.resx" />
+  <event action="Analyze" type="Success" name="frmReportServer.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmReportServer.resx" />
+  <event action="Analyze" type="Success" name="frmRFQ.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmRFQ.resx" />
+  <event action="Analyze" type="Success" name="frmRFQItems.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmRFQItems.resx" />
+  <event action="Analyze" type="Success" name="frmRFQList.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmRFQList.resx" />
+  <event action="Analyze" type="Success" name="frmRFQPur.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmRFQPur.resx" />
+  <event action="Analyze" type="Success" name="frmSignatory.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmSignatory.resx" />
+  <event action="Analyze" type="Success" name="frmUpdateRFQ.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmUpdateRFQ.resx" />
+  <event action="Analyze" type="Success" name="frmUpdateRFQChild.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmUpdateRFQChild.resx" />
+  <event action="Analyze" type="Success" name="frmViewRFQPur.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmViewRFQPur.resx" />
+  <event action="Analyze" type="Success" name="frmViewRFQSuppliers.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\RFQ Module\frmViewRFQSuppliers.resx" />
+  <event action="Analyze" type="Success" name="test.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\test.resx" />
+  <event action="Analyze" type="Success" name="frmUpBC.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Upload Module\frmUpBC.resx" />
+  <event action="Analyze" type="Success" name="frmUpBud.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Upload Module\frmUpBud.resx" />
+  <event action="Analyze" type="Success" name="frmUpItem.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Upload Module\frmUpItem.resx" />
+  <event action="Analyze" type="Success" name="frmUploadPicker.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Upload Module\frmUploadPicker.resx" />
+  <event action="Analyze" type="Success" name="frmUpPO.resx" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\Upload Module\frmUpPO.resx" />
+  <event action="Analyze" type="Success" name="ACCTNG" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\ACCTNG.vbproj" />
+  <event action="Analyze" type="Success" name="ACCTNG" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\ACCTNG.sln" />
+  <event action="Backup" type="Error" name="ACCTNG" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\ACCTNG.vbproj">System.IO.IOException: The process cannot access the file 'E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\.vs\ACCTNG\FileContentIndex\ff06ed43-4a89-48ad-84d6-c49907756825.vsidx' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at Telerik.Reporting.UpgradeWizard.Engine.Services.BackupService.BackupDirectory(String directoryName)
+   at Telerik.Reporting.UpgradeWizard.Engine.Services.BackupService.BackupDirectory(String directoryName)
+   at Telerik.Reporting.UpgradeWizard.Engine.Services.BackupService.BackupDirectory(String directoryName)
+   at Telerik.Reporting.UpgradeWizard.Engine.Services.BackupService.BackupDirectory(String directoryName)
+   at Telerik.Reporting.UpgradeWizard.Engine.ProjectItem.BackupInternal()
+   at Telerik.Reporting.UpgradeWizard.Engine.UpgradeItem.Backup()</event>
+  <event action="Restore" type="Success" name="ACCTNG" path="E:\SYSTEM UPDATED\BAP 2024\ACCTNG as of 10-19-2015 - VS2022\ACCTNG.vbproj" />
+</log>

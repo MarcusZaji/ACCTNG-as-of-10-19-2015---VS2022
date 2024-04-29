@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ACCTNG", "ACCTNG.vbproj", "{A11DBE5D-079B-44A5-922D-44ED78DCC464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A11DBE5D-079B-44A5-922D-44ED78DCC464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11DBE5D-079B-44A5-922D-44ED78DCC464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11DBE5D-079B-44A5-922D-44ED78DCC464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11DBE5D-079B-44A5-922D-44ED78DCC464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0CA1AEC-2938-4BAE-AAEA-28C1A69C8FA7}
+	EndGlobalSection
+EndGlobal

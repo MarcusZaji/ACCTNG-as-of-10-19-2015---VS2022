@@ -1,0 +1,1877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A11DBE5D-079B-44A5-922D-44ED78DCC464}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ACCTNG.My.MyApplication</StartupObject>
+    <RootNamespace>ACCTNG</RootNamespace>
+    <AssemblyName>ACCTNG</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ACCTNG.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ACCTNG.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bap ico 2.0.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Documents.SpreadsheetStreaming, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Bin\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Services.HttpClient, Version=13.0.19.222, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Bin\Telerik.Reporting.Services.HttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Bin\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.ChartView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Fluent, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.Fluent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Material, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.Material.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.MaterialBlueGrey, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.MaterialBlueGrey.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.MaterialPink, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.MaterialPink.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.MaterialTeal, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.MaterialTeal.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Windows.Documents.Fixed.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2024.1.124.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\TelerikData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikExport, Version=2024.1.130.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>lib\RCWF\2024.1.130.40\TelerikExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAP Module\frmInvestment.Designer.vb">
+      <DependentUpon>frmInvestment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmInvestment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomeNew.Designer.vb">
+      <DependentUpon>frmHomeNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomeNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\ConBCS.vb" />
+    <Compile Include="Functions\SAP.vb" />
+    <Compile Include="Functions\ReportServer.vb" />
+    <Compile Include="New BAP\Activity.Designer.vb">
+      <DependentUpon>Activity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\Activity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmAddMBudget.Designer.vb">
+      <DependentUpon>frmAddMBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmAddMBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmAddSubBudget.Designer.vb">
+      <DependentUpon>frmAddSubBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmAddSubBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmBudgetHistory.Designer.vb">
+      <DependentUpon>frmBudgetHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmBudgetHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmCreatePR.Designer.vb">
+      <DependentUpon>frmCreatePR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmCreatePR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmExportSubBud.designer.vb">
+      <DependentUpon>frmExportSubBud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmExportSubBud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmImport.Designer.vb">
+      <DependentUpon>frmImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmImportMasterBudget.Designer.vb">
+      <DependentUpon>frmImportMasterBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmImportMasterBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmInactiveSupp.Designer.vb">
+      <DependentUpon>frmInactiveSupp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmInactiveSupp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmItemCode.Designer.vb">
+      <DependentUpon>frmItemCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmItemCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmItemNonRM.Designer.vb">
+      <DependentUpon>frmItemNonRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmItemNonRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmMajorBudget.Designer.vb">
+      <DependentUpon>frmMajorBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmMajorBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmRemBudLessPR.Designer.vb">
+      <DependentUpon>frmRemBudLessPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmRemBudLessPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmServer.Designer.vb">
+      <DependentUpon>frmServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCS Module\frmMatrixExpense.Designer.vb">
+      <DependentUpon>frmMatrixExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCS Module\frmMatrixExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCS Module\frmMatrixExpenseTrans.Designer.vb">
+      <DependentUpon>frmMatrixExpenseTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCS Module\frmMatrixExpenseTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCS Module\frmRateLogsBC.Designer.vb">
+      <DependentUpon>frmRateLogsBC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCS Module\frmRateLogsBC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCS Module\frmUploadBCSBudget.Designer.vb">
+      <DependentUpon>frmUploadBCSBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCS Module\frmUploadBCSBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBAI.Designer.vb">
+      <DependentUpon>frmBAI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBAI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBOI.Designer.vb">
+      <DependentUpon>frmBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCS Module\frmConversionBC.Designer.vb">
+      <DependentUpon>frmConversionBC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCS Module\frmConversionBC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcctngSync.Designer.vb">
+      <DependentUpon>frmAcctngSync.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcctngSync.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDLSAP.Designer.vb">
+      <DependentUpon>frmDLSAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDLSAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBudgetSetting.Designer.vb">
+      <DependentUpon>frmBudgetSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBudgetSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCS Module\frmFinalBudgetCreated.Designer.vb">
+      <DependentUpon>frmFinalBudgetCreated.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCS Module\frmFinalBudgetCreated.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\globalVariables.vb" />
+    <Compile Include="Functions\HRMS.vb" />
+    <Compile Include="Functions\MyGlobal.vb" />
+    <Compile Include="Functions\Zaji.vb" />
+    <Compile Include="New BAP\frmMajorBudHistory.Designer.vb">
+      <DependentUpon>frmMajorBudHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmMajorBudHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmModel.Designer.vb">
+      <DependentUpon>frmModel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmPezaInfo.Designer.vb">
+      <DependentUpon>frmPezaInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmPezaInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmRate.Designer.vb">
+      <DependentUpon>frmRate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmRate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmSupplier.Designer.vb">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmUpdatePOI.Designer.vb">
+      <DependentUpon>frmUpdatePOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmUpdatePOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmUpdateSubBudget.Designer.vb">
+      <DependentUpon>frmUpdateSubBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmUpdateSubBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmUploadSubBud.designer.vb">
+      <DependentUpon>frmUploadSubBud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmUploadSubBud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New BAP\frmViewPR.Designer.vb">
+      <DependentUpon>frmViewPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New BAP\frmViewPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmGenReportBC.Designer.vb">
+      <DependentUpon>frmGenReportBC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmGenReportBC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmPleaseWait.Designer.vb">
+      <DependentUpon>frmPleaseWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmPleaseWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmPRReport.Designer.vb">
+      <DependentUpon>frmPRReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmPRReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmReportBC.Designer.vb">
+      <DependentUpon>frmReportBC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmReportBC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemeSelector.Designer.vb">
+      <DependentUpon>frmThemeSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemeSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmReportInv.Designer.vb">
+      <DependentUpon>frmReportInv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmReportInv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmReportInvestment.Designer.vb">
+      <DependentUpon>frmReportInvestment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmReportInvestment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repPrintPRNewv2.Designer.vb">
+      <DependentUpon>repPrintPRNewv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repPrintPRNewv2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\rptRemBudLessPR.Designer.vb">
+      <DependentUpon>rptRemBudLessPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\rptRemBudLessPR.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repPrintPRNew.Designer.vb">
+      <DependentUpon>repPrintPRNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repPrintPRNew.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\rptDetailedReportInv.Designer.vb">
+      <DependentUpon>rptDetailedReportInv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\rptDetailedReportInv.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\rptDetailedReportInvChild.Designer.vb">
+      <DependentUpon>rptDetailedReportInvChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\rptDetailedReportInvChild.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvPODetails.Designer.vb">
+      <DependentUpon>RptPerInvPODetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvPODetails.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvPO.Designer.vb">
+      <DependentUpon>RptPerInvPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvPO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvNo.Designer.vb">
+      <DependentUpon>RptPerInvNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvNo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvPODetailsC.Designer.vb">
+      <DependentUpon>RptPerInvPODetailsC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\RptPerInvPODetailsC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\rtpInvestment.Designer.vb">
+      <DependentUpon>rtpInvestment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\rtpInvestment.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repCreatedMajorBud.Designer.vb">
+      <DependentUpon>repCreatedMajorBud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repCreatedMajorBud.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repAA.Designer.vb">
+      <DependentUpon>repAA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repAA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repAAItems.Designer.vb">
+      <DependentUpon>repAAItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repAAItems.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repBud.Designer.vb">
+      <DependentUpon>repBud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repBud.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repBudgetGrid.Designer.vb">
+      <DependentUpon>repBudgetGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repBudgetGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repBudUpdated.Designer.vb">
+      <DependentUpon>repBudUpdated.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repBudUpdated.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repDept.Designer.vb">
+      <DependentUpon>repDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repDept.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repFPO_Summary_Item.Designer.vb">
+      <DependentUpon>repFPO_Summary_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repFPO_Summary_Item.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repFPO_Summary_List.Designer.vb">
+      <DependentUpon>repFPO_Summary_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repFPO_Summary_List.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repIR2.Designer.vb">
+      <DependentUpon>repIR2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repIR2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repMonth.Designer.vb">
+      <DependentUpon>repMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repMonth.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repMonthAll.Designer.vb">
+      <DependentUpon>repMonthAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repMonthAll.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repOrderItem.Designer.vb">
+      <DependentUpon>repOrderItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repOrderItem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repOrderList.Designer.vb">
+      <DependentUpon>repOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repOrderList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\Report1.Designer.vb">
+      <DependentUpon>Report1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\Report1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPrintPR.Designer.vb">
+      <DependentUpon>repPrintPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPrintPR.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item_Open_All.Designer.vb">
+      <DependentUpon>repPR_Item_Open_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item_Open_All.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item_Open.Designer.vb">
+      <DependentUpon>repPR_Item_Open.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item_Open.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item_All.Designer.vb">
+      <DependentUpon>repPR_Item_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item_All.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWGC_Class.Designer.vb">
+      <DependentUpon>repRWGC_Class.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWGC_Class.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG_POClassByClass.Designer.vb">
+      <DependentUpon>repRWG_POClassByClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG_POClassByClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repConsolidatedBudget.Designer.vb">
+      <DependentUpon>repConsolidatedBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repConsolidatedBudget.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBCombine.Designer.vb">
+      <DependentUpon>repFBCombine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBCombine.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperAmountperPPEClass.Designer.vb">
+      <DependentUpon>repFBperAmountperPPEClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperAmountperPPEClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperAmountperClass.Designer.vb">
+      <DependentUpon>repFBperAmountperClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperAmountperClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperQTYperPPEClass.Designer.vb">
+      <DependentUpon>repFBperQTYperPPEClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperQTYperPPEClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperQTYperClass.Designer.vb">
+      <DependentUpon>repFBperQTYperClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperQTYperClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repUserBudCreated.Designer.vb">
+      <DependentUpon>repUserBudCreated.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repUserBudCreated.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item.Designer.vb">
+      <DependentUpon>repPR_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item_All.Designer.vb">
+      <DependentUpon>repPR_Item_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item_All.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item_Open.Designer.vb">
+      <DependentUpon>repPR_Item_Open.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item_Open.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item_Open_All.Designer.vb">
+      <DependentUpon>repPR_Item_Open_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repPR_Item_Open_All.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG.Designer.vb">
+      <DependentUpon>repRWG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWGC.Designer.vb">
+      <DependentUpon>repRWGC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWGC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWGC_Class.Designer.vb">
+      <DependentUpon>repRWGC_Class.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWGC_Class.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG_PO.Designer.vb">
+      <DependentUpon>repRWG_PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG_PO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG_POClass.Designer.vb">
+      <DependentUpon>repRWG_POClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG_POClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG_POClassByClass.Designer.vb">
+      <DependentUpon>repRWG_POClassByClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repRWG_POClassByClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repSOrderList.Designer.vb">
+      <DependentUpon>repSOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repSOrderList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_B_2017\repUPO_Summary.Designer.vb">
+      <DependentUpon>repUPO_Summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_B_2017\repUPO_Summary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\rptPRHeader.Designer.vb">
+      <DependentUpon>rptPRHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\rptPRHeader.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmCancelRFQ.Designer.vb">
+      <DependentUpon>frmCancelRFQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmCancelRFQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmReportServer.Designer.vb">
+      <DependentUpon>frmReportServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmReportServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQ.designer.vb">
+      <DependentUpon>frmRFQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQItems.Designer.vb">
+      <DependentUpon>frmRFQItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQList.Designer.vb">
+      <DependentUpon>frmRFQList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQPur.Designer.vb">
+      <DependentUpon>frmRFQPur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmRFQPur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmSignatory.Designer.vb">
+      <DependentUpon>frmSignatory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmSignatory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmUpdateRFQ.Designer.vb">
+      <DependentUpon>frmUpdateRFQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmUpdateRFQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmUpdateRFQChild.Designer.vb">
+      <DependentUpon>frmUpdateRFQChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmUpdateRFQChild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmViewRFQPur.Designer.vb">
+      <DependentUpon>frmViewRFQPur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmViewRFQPur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFQ Module\frmViewRFQSuppliers.Designer.vb">
+      <DependentUpon>frmViewRFQSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFQ Module\frmViewRFQSuppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.vb">
+      <DependentUpon>test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload Module\frmUpBC.Designer.vb">
+      <DependentUpon>frmUpBC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Upload Module\frmUpBC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload Module\frmUpBud.Designer.vb">
+      <DependentUpon>frmUpBud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Upload Module\frmUpBud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload Module\frmUpPO.Designer.vb">
+      <DependentUpon>frmUpPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Upload Module\frmUpPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload Module\frmUpItem.Designer.vb">
+      <DependentUpon>frmUpItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Upload Module\frmUpItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload Module\frmUploadPicker.Designer.vb">
+      <DependentUpon>frmUploadPicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Upload Module\frmUploadPicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Jamela.vb" />
+    <Compile Include="BCS Module\frmBudgetCreation.Designer.vb">
+      <DependentUpon>frmBudgetCreation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCS Module\frmBudgetCreation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmFPO.Designer.vb">
+      <DependentUpon>frmFPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmFPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmCPO.Designer.vb">
+      <DependentUpon>frmCPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmCPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Pink.vb" />
+    <Compile Include="frmChangePW.Designer.vb">
+      <DependentUpon>frmChangePW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEtc.Designer.vb">
+      <DependentUpon>frmAddEtc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEtc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\BabyGirl.vb" />
+    <Compile Include="BAP Module\frmMultiOrder.Designer.vb">
+      <DependentUpon>frmMultiOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmMultiOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderPicker.Designer.vb">
+      <DependentUpon>frmOrderPicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderPicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmGenUpd8dBud.Designer.vb">
+      <DependentUpon>frmGenUpd8dBud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmGenUpd8dBud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmUsers.Designer.vb">
+      <DependentUpon>frmConfirmUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmPOChange.Designer.vb">
+      <DependentUpon>frmPOChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmPOChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmViewPO.Designer.vb">
+      <DependentUpon>frmViewPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmViewPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repFPO_Summary_Item.Designer.vb">
+      <DependentUpon>repFPO_Summary_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repFPO_Summary_Item.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repFPO_Summary_List.Designer.vb">
+      <DependentUpon>repFPO_Summary_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repFPO_Summary_List.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repPrintPR.Designer.vb">
+      <DependentUpon>repPrintPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repPrintPR.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repAAItems.Designer.vb">
+      <DependentUpon>repAAItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repAAItems.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repAAList.Designer.vb">
+      <DependentUpon>repAAList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repAAList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repBudUpdated.Designer.vb">
+      <DependentUpon>repBudUpdated.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repBudUpdated.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repAAGrid.Designer.vb">
+      <DependentUpon>repAAGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repAAGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repAA.Designer.vb">
+      <DependentUpon>repAA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repAA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repBudgetGrid.Designer.vb">
+      <DependentUpon>repBudgetGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repBudgetGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Functions\Chinita.vb" />
+    <Compile Include="Functions\Tomboy.vb" />
+    <Compile Include="frmConversion.Designer.vb">
+      <DependentUpon>frmConversion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConversion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\MoveControl.vb" />
+    <Compile Include="Functions\Chix.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmUser.Designer.vb">
+      <DependentUpon>frmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetDataConn.Designer.vb">
+      <DependentUpon>frmSetDataConn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetDataConn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmBudget.Designer.vb">
+      <DependentUpon>frmBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsplash.Designer.vb">
+      <DependentUpon>frmsplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLongProcess.Designer.vb">
+      <DependentUpon>frmLongProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLongProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmOrder.Designer.vb">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAP Module\frmAA.Designer.vb">
+      <DependentUpon>frmAA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BAP Module\frmAA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Module\frmGenReport.Designer.vb">
+      <DependentUpon>frmGenReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Module\frmGenReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repBud.Designer.vb">
+      <DependentUpon>repBud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repBud.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repDept.Designer.vb">
+      <DependentUpon>repDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repDept.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repIR2.Designer.vb">
+      <DependentUpon>repIR2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repIR2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repMonthAll.Designer.vb">
+      <DependentUpon>repMonthAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repMonthAll.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repMonth.Designer.vb">
+      <DependentUpon>repMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repMonth.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repIR_Sub.Designer.vb">
+      <DependentUpon>repIR_Sub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repIR_Sub.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repOrderItem.Designer.vb">
+      <DependentUpon>repOrderItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repOrderItem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item.Designer.vb">
+      <DependentUpon>repPR_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repPR_Item.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG_PO.Designer.vb">
+      <DependentUpon>repRWG_PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG_PO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG_POClass.Designer.vb">
+      <DependentUpon>repRWG_POClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG_POClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWGC.Designer.vb">
+      <DependentUpon>repRWGC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWGC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repSOrderList.Designer.vb">
+      <DependentUpon>repSOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repSOrderList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repOrderList.Designer.vb">
+      <DependentUpon>repOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repOrderList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG.Designer.vb">
+      <DependentUpon>repRWG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repRWG.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BAP\repUPO_Summary.Designer.vb">
+      <DependentUpon>repUPO_Summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BAP\repUPO_Summary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperQTY.Designer.vb">
+      <DependentUpon>repFBperQTY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperQTY.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperAmount.Designer.vb">
+      <DependentUpon>repFBperAmount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_BCS\repFBperAmount.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BAP Module\frmInvestment.resx">
+      <DependentUpon>frmInvestment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomeNew.resx">
+      <DependentUpon>frmHomeNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\Activity.resx">
+      <DependentUpon>Activity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmAddMBudget.resx">
+      <DependentUpon>frmAddMBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmAddSubBudget.resx">
+      <DependentUpon>frmAddSubBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmBudgetHistory.resx">
+      <DependentUpon>frmBudgetHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmCreatePR.resx">
+      <DependentUpon>frmCreatePR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmExportSubBud.resx">
+      <DependentUpon>frmExportSubBud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmImport.resx">
+      <DependentUpon>frmImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmImportMasterBudget.resx">
+      <DependentUpon>frmImportMasterBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmInactiveSupp.resx">
+      <DependentUpon>frmInactiveSupp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmItemCode.resx">
+      <DependentUpon>frmItemCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmItemNonRM.resx">
+      <DependentUpon>frmItemNonRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmMajorBudget.resx">
+      <DependentUpon>frmMajorBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmRemBudLessPR.resx">
+      <DependentUpon>frmRemBudLessPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmServer.resx">
+      <DependentUpon>frmServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCS Module\frmMatrixExpense.resx">
+      <DependentUpon>frmMatrixExpense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCS Module\frmMatrixExpenseTrans.resx">
+      <DependentUpon>frmMatrixExpenseTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCS Module\frmRateLogsBC.resx">
+      <DependentUpon>frmRateLogsBC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCS Module\frmUploadBCSBudget.resx">
+      <DependentUpon>frmUploadBCSBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBAI.resx">
+      <DependentUpon>frmBAI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBOI.resx">
+      <DependentUpon>frmBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePW.resx">
+      <DependentUpon>frmChangePW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEtc.resx">
+      <DependentUpon>frmAddEtc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCS Module\frmConversionBC.resx">
+      <DependentUpon>frmConversionBC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcctngSync.resx">
+      <DependentUpon>frmAcctngSync.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDLSAP.resx">
+      <DependentUpon>frmDLSAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBudgetSetting.resx">
+      <DependentUpon>frmBudgetSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCS Module\frmFinalBudgetCreated.resx">
+      <DependentUpon>frmFinalBudgetCreated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="New BAP\frmMajorBudHistory.resx">
+      <DependentUpon>frmMajorBudHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmModel.resx">
+      <DependentUpon>frmModel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmPezaInfo.resx">
+      <DependentUpon>frmPezaInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmRate.resx">
+      <DependentUpon>frmRate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmSupplier.resx">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmUpdatePOI.resx">
+      <DependentUpon>frmUpdatePOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmUpdateSubBudget.resx">
+      <DependentUpon>frmUpdateSubBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmUploadSubBud.resx">
+      <DependentUpon>frmUploadSubBud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New BAP\frmViewPR.resx">
+      <DependentUpon>frmViewPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmGenReportBC.resx">
+      <DependentUpon>frmGenReportBC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmPleaseWait.resx">
+      <DependentUpon>frmPleaseWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmPRReport.resx">
+      <DependentUpon>frmPRReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmReportBC.resx">
+      <DependentUpon>frmReportBC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemeSelector.resx">
+      <DependentUpon>frmThemeSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmReportInv.resx">
+      <DependentUpon>frmReportInv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmReportInvestment.resx">
+      <DependentUpon>frmReportInvestment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repPrintPRNewv2.resx">
+      <DependentUpon>repPrintPRNewv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\rptRemBudLessPR.resx">
+      <DependentUpon>rptRemBudLessPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repPrintPRNew.resx">
+      <DependentUpon>repPrintPRNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\rptDetailedReportInv.resx">
+      <DependentUpon>rptDetailedReportInv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\rptDetailedReportInvChild.resx">
+      <DependentUpon>rptDetailedReportInvChild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\RptPerInvPODetails.resx">
+      <DependentUpon>RptPerInvPODetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\RptPerInvPO.resx">
+      <DependentUpon>RptPerInvPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\RptPerInvNo.resx">
+      <DependentUpon>RptPerInvNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\RptPerInvPODetailsC.resx">
+      <DependentUpon>RptPerInvPODetailsC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\rtpInvestment.resx">
+      <DependentUpon>rtpInvestment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repCreatedMajorBud.resx">
+      <DependentUpon>repCreatedMajorBud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repAA.resx">
+      <DependentUpon>repAA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repAAItems.resx">
+      <DependentUpon>repAAItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repBud.resx">
+      <DependentUpon>repBud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repBudgetGrid.resx">
+      <DependentUpon>repBudgetGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repBudUpdated.resx">
+      <DependentUpon>repBudUpdated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repDept.resx">
+      <DependentUpon>repDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repFPO_Summary_Item.resx">
+      <DependentUpon>repFPO_Summary_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repFPO_Summary_List.resx">
+      <DependentUpon>repFPO_Summary_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repIR2.resx">
+      <DependentUpon>repIR2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repMonth.resx">
+      <DependentUpon>repMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repMonthAll.resx">
+      <DependentUpon>repMonthAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repOrderItem.resx">
+      <DependentUpon>repOrderItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repOrderList.resx">
+      <DependentUpon>repOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\Report1.resx">
+      <DependentUpon>Report1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repPrintPR.resx">
+      <DependentUpon>repPrintPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repPR_Item_Open_All.resx">
+      <DependentUpon>repPR_Item_Open_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repPR_Item_Open.resx">
+      <DependentUpon>repPR_Item_Open.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repPR_Item_All.resx">
+      <DependentUpon>repPR_Item_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repRWGC_Class.resx">
+      <DependentUpon>repRWGC_Class.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repRWG_POClassByClass.resx">
+      <DependentUpon>repRWG_POClassByClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repConsolidatedBudget.resx">
+      <DependentUpon>repConsolidatedBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repFBCombine.resx">
+      <DependentUpon>repFBCombine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repFBperAmountperPPEClass.resx">
+      <DependentUpon>repFBperAmountperPPEClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repFBperAmountperClass.resx">
+      <DependentUpon>repFBperAmountperClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repFBperQTYperPPEClass.resx">
+      <DependentUpon>repFBperQTYperPPEClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repFBperQTYperClass.resx">
+      <DependentUpon>repFBperQTYperClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repUserBudCreated.resx">
+      <DependentUpon>repUserBudCreated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repPR_Item.resx">
+      <DependentUpon>repPR_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repPR_Item_All.resx">
+      <DependentUpon>repPR_Item_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repPR_Item_Open.resx">
+      <DependentUpon>repPR_Item_Open.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repPR_Item_Open_All.resx">
+      <DependentUpon>repPR_Item_Open_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repRWG.resx">
+      <DependentUpon>repRWG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repRWGC.resx">
+      <DependentUpon>repRWGC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repRWGC_Class.resx">
+      <DependentUpon>repRWGC_Class.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repRWG_PO.resx">
+      <DependentUpon>repRWG_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repRWG_POClass.resx">
+      <DependentUpon>repRWG_POClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repRWG_POClassByClass.resx">
+      <DependentUpon>repRWG_POClassByClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repSOrderList.resx">
+      <DependentUpon>repSOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_B_2017\repUPO_Summary.resx">
+      <DependentUpon>repUPO_Summary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\rptPRHeader.resx">
+      <DependentUpon>rptPRHeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmCancelRFQ.resx">
+      <DependentUpon>frmCancelRFQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmReportServer.resx">
+      <DependentUpon>frmReportServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmRFQ.resx">
+      <DependentUpon>frmRFQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmRFQItems.resx">
+      <DependentUpon>frmRFQItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmRFQList.resx">
+      <DependentUpon>frmRFQList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmRFQPur.resx">
+      <DependentUpon>frmRFQPur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmSignatory.resx">
+      <DependentUpon>frmSignatory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmUpdateRFQ.resx">
+      <DependentUpon>frmUpdateRFQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmUpdateRFQChild.resx">
+      <DependentUpon>frmUpdateRFQChild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmViewRFQPur.resx">
+      <DependentUpon>frmViewRFQPur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFQ Module\frmViewRFQSuppliers.resx">
+      <DependentUpon>frmViewRFQSuppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload Module\frmUpBC.resx">
+      <DependentUpon>frmUpBC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload Module\frmUpBud.resx">
+      <DependentUpon>frmUpBud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload Module\frmUpPO.resx">
+      <DependentUpon>frmUpPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload Module\frmUpItem.resx">
+      <DependentUpon>frmUpItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload Module\frmUploadPicker.resx">
+      <DependentUpon>frmUploadPicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCS Module\frmBudgetCreation.resx">
+      <DependentUpon>frmBudgetCreation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmFPO.resx">
+      <DependentUpon>frmFPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmCPO.resx">
+      <DependentUpon>frmCPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmMultiOrder.resx">
+      <DependentUpon>frmMultiOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderPicker.resx">
+      <DependentUpon>frmOrderPicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmGenUpd8dBud.resx">
+      <DependentUpon>frmGenUpd8dBud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmUsers.resx">
+      <DependentUpon>frmConfirmUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmPOChange.resx">
+      <DependentUpon>frmPOChange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmViewPO.resx">
+      <DependentUpon>frmViewPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repFPO_Summary_Item.resx">
+      <DependentUpon>repFPO_Summary_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repFPO_Summary_List.resx">
+      <DependentUpon>repFPO_Summary_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repPrintPR.resx">
+      <DependentUpon>repPrintPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repAAItems.resx">
+      <DependentUpon>repAAItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repAAList.resx">
+      <DependentUpon>repAAList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repBudUpdated.resx">
+      <DependentUpon>repBudUpdated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repAAGrid.resx">
+      <DependentUpon>repAAGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repAA.resx">
+      <DependentUpon>repAA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repBudgetGrid.resx">
+      <DependentUpon>repBudgetGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConversion.resx">
+      <DependentUpon>frmConversion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetDataConn.resx">
+      <DependentUpon>frmSetDataConn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmBudget.resx">
+      <DependentUpon>frmBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsplash.resx">
+      <DependentUpon>frmsplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLongProcess.resx">
+      <DependentUpon>frmLongProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmOrder.resx">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAP Module\frmAA.resx">
+      <DependentUpon>frmAA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Module\frmGenReport.resx">
+      <DependentUpon>frmGenReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repBud.resx">
+      <DependentUpon>repBud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repDept.resx">
+      <DependentUpon>repDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repIR2.resx">
+      <DependentUpon>repIR2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repMonthAll.resx">
+      <DependentUpon>repMonthAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repMonth.resx">
+      <DependentUpon>repMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repIR_Sub.resx">
+      <DependentUpon>repIR_Sub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repOrderItem.resx">
+      <DependentUpon>repOrderItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repPR_Item.resx">
+      <DependentUpon>repPR_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repRWG_PO.resx">
+      <DependentUpon>repRWG_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repRWG_POClass.resx">
+      <DependentUpon>repRWG_POClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repRWGC.resx">
+      <DependentUpon>repRWGC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repSOrderList.resx">
+      <DependentUpon>repSOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repOrderList.resx">
+      <DependentUpon>repOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repRWG.resx">
+      <DependentUpon>repRWG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BAP\repUPO_Summary.resx">
+      <DependentUpon>repUPO_Summary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repFBperQTY.resx">
+      <DependentUpon>repFBperQTY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_BCS\repFBperAmount.resx">
+      <DependentUpon>repFBperAmount.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\View PO.PNG" />
+    <None Include="Resources\View Order.PNG" />
+    <None Include="Resources\User1.png" />
+    <None Include="Resources\BG2.png" />
+    <None Include="Resources\Acquirsition.png" />
+    <None Include="Resources\back.png" />
+    <Content Include="bap ico 2.0.ico" />
+    <Content Include="BAP.ico" />
+    <None Include="Resources\Calc.png" />
+    <None Include="Resources\Add Order.PNG" />
+    <None Include="Resources\BAP logo 2.0.png" />
+    <None Include="Resources\BAP logo 2.0 32.png" />
+    <None Include="Resources\BAP Con.png" />
+    <None Include="Resources\audit.png" />
+    <None Include="Resources\3d-modeling.png" />
+    <Content Include="Resources\BAP_BAP_BABY.wav" />
+    <None Include="Resources\Change PO.png" />
+    <None Include="Resources\Budget Setting.png" />
+    <None Include="Resources\Budget Setting 1.PNG" />
+    <None Include="Resources\Budget Setting1.png" />
+    <None Include="Resources\budgeting.png" />
+    <Content Include="Resources\cihvbox.png" />
+    <None Include="Resources\DOORS-BG-TRANS.png" />
+    <None Include="Resources\DOORS LOGO.PNG" />
+    <None Include="Resources\DOORS-BG-TRANS-SMALL.PNG" />
+    <None Include="Resources\Currency.png" />
+    <None Include="Resources\Database.PNG" />
+    <None Include="Resources\Download1.PNG" />
+    <None Include="Resources\Download.png" />
+    <None Include="Resources\Create Budget.png" />
+    <None Include="Resources\Create Budget 1.png" />
+    <None Include="Resources\exchange-rate.png" />
+    <None Include="Resources\exchange-rate %281%29.png" />
+    <None Include="Resources\clipboard.png" />
+    <Content Include="Resources\Exit.png" />
+    <None Include="Resources\FEAP LOGO.png" />
+    <None Include="Resources\FEAP LOGO WHITE.png" />
+    <None Include="Resources\FEAP.png" />
+    <None Include="Resources\Exit2.png" />
+    <Content Include="Resources\File.png" />
+    <None Include="Resources\Logon.png" />
+    <None Include="Resources\Order.png" />
+    <None Include="Resources\Report.PNG" />
+    <None Include="Resources\Settings copy.png" />
+    <None Include="Resources\Items copy.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\Purchased Order.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\Final Budget 1.png" />
+    <None Include="Resources\New PO.PNG" />
+    <None Include="Resources\Force PO.png" />
+    <None Include="Resources\NotificationIcon.png" />
+    <None Include="Resources\NotificationForBAP.png" />
+    <None Include="Resources\NotificationForBAPSmall.png" />
+    <None Include="Resources\Investment.png" />
+    <None Include="Resources\Investment2.png" />
+    <None Include="Resources\RFQ.png" />
+    <None Include="Resources\listrm.png" />
+    <None Include="Resources\question %281%29.png" />
+    <None Include="Resources\question %282%29.png" />
+    <Content Include="Resources\Settings.png" />
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\Upload1.png" />
+    <None Include="Resources\Upload Budget V.png" />
+    <None Include="Resources\suppliernew.png" />
+    <None Include="Resources\Upload New Sub.png" />
+    <None Include="Resources\supplier.png" />
+    <None Include="Resources\signatory.png" />
+    <Content Include="Resources\User.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

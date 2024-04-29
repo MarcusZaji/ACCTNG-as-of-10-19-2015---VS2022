@@ -1,0 +1,40 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="setServerAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.191.12</Value>
+    </Setting>
+    <Setting Name="setUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">feap</Value>
+    </Setting>
+    <Setting Name="setPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">45|iF$</Value>
+    </Setting>
+    <Setting Name="setServerDBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dbBAP</Value>
+    </Setting>
+    <Setting Name="Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dbBCS" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server = 192.168.191.252; Database = dbBCS; Uid = feap; Pwd = 45|iF$; Convert Zero Datetime=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server = 192.168.191.252; Database = dbBCS; Uid = feap; Pwd = 45|iF$; Convert Zero Datetime=True</Value>
+    </Setting>
+    <Setting Name="BAPServerAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.191.12</Value>
+    </Setting>
+    <Setting Name="BAPDBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dbBAP</Value>
+    </Setting>
+    <Setting Name="BAPServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BAP</Value>
+    </Setting>
+    <Setting Name="dbHRMS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server = 192.168.191.252;Database=dbHRMSlive;Uid=feap;Pwd=45|iF$;Convert Zero Datetime=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
